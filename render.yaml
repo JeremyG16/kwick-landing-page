@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: kwick-landing
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: Content-Type
+        value: text/html; charset=utf-8
